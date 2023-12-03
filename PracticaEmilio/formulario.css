@@ -1,0 +1,105 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    /* Establece el área de relleno en los cuatro lados de un elemento */
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    /* Como hay 2 aside con la misma clase, cada uno va a ocupar un 15% */
+    background-color: #eee;
+    padding: 10px;
+    width: 15%;
+}
+.lista-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.li-lista-aside{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.lista-aside a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista-aside a:hover {
+    color: #004b41;
+}
+
+.aside-derecha{
+    background-image: url(./imagenes/b38d2854f779ea99b2f46777cfb04f29.jpg);
+}
+
+
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    padding: 20px;
+    flex-direction: column;
+    /* Dejar un espacio por cada item */
+    gap: 10px;
+    background-color: #a58055a8;
+}
+
+.div-input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* modifico los inputs que estan dentro de las clases div-input-form */
+/* La , sirve para modificar 2 elementos a la vez */
+.div-input-form input,
+.div-input-form select,
+.div-input-form textarea {
+    width: 100%;
+    /* Modifico el border del input */
+    /* 1px es el grosor del borde */
+    /* solid es el estilo del borde */
+    /* Y luego el color */
+    border: 2px solid #ccc;
+    /* La redondez del borde */
+    border-radius: 10px;
+    padding: 8px;
+
+}
+
+/* modifico los label que estan dentro de las clases div-input-form */
+.div-input-form label {
+    font-size: 20px;
+}
+
+.div-input-form-checkbox {
+    display: flex;
+}
+
+.div-input-form select {
+    cursor: pointer;
+
+}
+
+/* Con el :hover, le indico el estilo cuando el raton se pone encima */
+.boton-enviar:hover {
+    /* Cuando el raton se pone encima el puntero se cambia a la mano */
+    color: aliceblue;
+    background-color: #004b41;
+
+}
+.aside-derecha{
+    background-image: url(./imagenes/b38d2854f779ea99b2f46777cfb04f29.jpg);
+}
