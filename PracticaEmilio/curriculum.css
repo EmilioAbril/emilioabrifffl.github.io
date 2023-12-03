@@ -1,0 +1,74 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    /* Establece el área de relleno en los cuatro lados de un elemento */
+    padding: 20px;
+    text-align: center;   
+}
+
+aside {
+    /* Como hay 2 aside con la misma clase, cada uno va a ocupar un 15% */
+    background-color: #eee;
+    padding: 10px;
+    width: 15%;
+}
+.lista-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.li-lista-aside{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.lista-aside a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista-aside a:hover {
+    color: #004b41;
+}
+
+.img-curriculum{
+height: 130px;
+}
+
+.div-tabla-curriculum {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 30px;
+    /* Crea una difuminacion del borde */
+    /* 300px es el tamaño de la difuninacion */
+    box-shadow: 0 0 75px rgb(0, 0, 0);
+    
+}
+
+table {
+    width: 100%;
+    /* que las celdas esten juntas */
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #4caf50;
+    color: #fff;
+}
+.aside-derecha{
+    background-image:url(./imagenes/b38d2854f779ea99b2f46777cfb04f29.jpg)
+}
