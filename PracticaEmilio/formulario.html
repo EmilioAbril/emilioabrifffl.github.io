@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="formulario.css">
+
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="div-nav">
+                <a href="index.html" class="enlace">
+                    <p>Pagina principal</p>
+                </a>
+                <!-- En el href pongo el enlace que me manda al clickar -->
+                <a href="formulario.html" class="enlace" style="color: #c9a14e;">
+                    <!-- Distribuir texto -->
+                    <p>Formulario</p>
+                </a>
+                <a href="curriculum.html" class="enlace">
+                    <p>CV</p>
+                </a>
+                <a href="informacion.html" class="enlace">
+                    <p>Información</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- Creo un div que contendrá 2 aside y un main y le doy la propiedad flex-->
+    <div style="display: flex;">
+        <aside>
+            <h2>Redes Sociales</h2>
+            <p></p>
+            <!-- Creamos una lista desordenada, sin numeros -->
+            <ul class="lista-aside">
+                
+                <!-- El target te abre otra pagina -->
+                <a href="https://www.instagram.com/" target="_blank" class="li-lista-aside">
+                    <li>Instagram</li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+                        <!-- todo lo que pone en el path d= sirve para "dibujar" laslineas del dibujo -->
+                        <path
+                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                    </svg>
+
+                </a>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h1>Formulario</h1>
+            <form action="#" method="post">
+
+                <!-- Meto cada input en un div para poder modificar el css mejor -->
+                <div class="div-input-form">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="div-input-form">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="div-input-form">
+                    <label for="contrasena">Codigo postal:</label>
+                    <input type="password" id="contrasena" name="contrasena" required>
+                </div>
+                <div class="div-input-form">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="18" required>
+                </div>
+                <div class="div-input-form">
+                    <label for="genero">Género:</label>
+                    <select id="genero" name="genero" required>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="div-input-form">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad">
+                </div>
+
+                <div class="div-input-form">
+                    <!-- Le pongo otro div para que los checkbox salgan en horizonal -->
+                    <label for="intereses">Intereses:</label>
+
+                    <div class="div-input-form-checkbox">
+                        <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                        <p>Deporte</p>
+                        <input type="checkbox" id="musica" name="intereses" value="musica">
+                        <p>Música</p>
+                        <input type="checkbox" id="viajes" name="intereses" value="viajes">
+                        <p>Viajes</p>
+                    </div>
+
+                </div>
+                <div class="div-input-form">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50"></textarea>
+                </div>
+                <div class="div-input-form">
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="div-input-form">
+                    <label for="url">Sitio web:</label>
+                    <input type="url" id="url" name="url">
+                </div>
+                <div class="div-input-form">
+                    <label for="color">Color favorito:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+                <div class="div-input-form">
+                    <label for="archivo">Adjuntar archivo:</label>
+                    <input type="file" id="archivo" name="archivo">
+                </div>
+                <div class="div-input-form">
+                    <input class="boton-enviar" type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </main>
+
+        <aside class="aside-derecha">
+        </aside>
+
+    </div>
+
+    <footer>
+        <!-- &copy te pone el logo de copyrigh -->
+        <p>&copy; Proyecto primra evaluacion Emilio Abril</p>
+    </footer>
+</body>
+
+</html>
