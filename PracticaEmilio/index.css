@@ -1,0 +1,94 @@
+main {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    /* Establece el área de relleno en los cuatro lados de un elemento */
+    padding: 20px;
+    text-align: center;
+}
+
+aside {
+    /* Como hay 2 aside con la misma clase, cada uno va a ocupar un 15% */
+    background-color: #eee;
+    padding: 10px;
+    width: 15%;
+}
+
+.lista-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.li-lista-aside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.lista-aside a {
+    text-decoration: none;
+    color: black;
+}
+
+.lista-aside a:hover {
+    color: #004b41;
+}
+
+/* Al poner 3, te pone 3 colmnas distribuyendo los items */
+.columnas2{
+    column-count: 3;
+    column-gap:20px;
+    column-rule:4px dotted gray;
+    height: auto; /* Establece la altura automática */
+    list-style-type: none;
+    background-color: #a58055a8;
+    color: #004b41;
+    font-size: 135%;  
+ }
+
+.caracteristicas {
+    column-count: 3;
+}
+.caracteristicas p{
+    break-after:column;
+}
+.aside-derecha{
+    background-image: url(./imagenes/b38d2854f779ea99b2f46777cfb04f29.jpg)
+    
+    
+}
+.parrafo1{
+    margin: 0;
+}
+.parrafo2{
+    margin: 0;
+}
+.parrafo3{
+    margin: 0;
+}
+.cosas{
+    text-align: left;
+    display: inline;
+    color: #004b41;
+}
+img.left {
+    float: right;
+    margin-right: 10%;
+    height: 19%;
+    width: 19%;
+}
+ul.test li:first-child {
+    padding-bottom: 10%;
+    
+}
+.titulocosas{
+    color: #004b41;
+    background-color:#a58055a8 ;
+}
+.quitarnegrita{
+    font-weight: normal;
+    color: black;
+}

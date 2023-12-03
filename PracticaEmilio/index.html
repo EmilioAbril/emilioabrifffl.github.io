@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Vinculo el css con el html -->
+    <!-- si escribo link, picho en link:css me lo crea solo -->
+    <!-- Styleshhet le digo que tipo de enlace es -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Cambia el nombre del documento que aparece en la pestaña -->
+    <title>Pagina Principal</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="div-nav">
+                <a href="index.html" class="enlace" style="color: #c9a14e;">
+                    <p>Pagina principal</p>
+                </a>
+                <!-- En el href pongo el enlace que me manda al clickar -->
+                <a href="formulario.html" class="enlace">
+                    <!-- Distribuir texto -->
+                    <p>Formulario</p>
+                </a>
+                <a href="curriculum.html" class="enlace">
+                    <p>CV</p>
+                </a>
+                <a href="informacion.html" class="enlace">
+                    <p>Información</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <div style="display: flex;">
+        <aside>
+            <h2>Redes Sociales</h2>
+            <p>Contenido del primer aside.</p>
+            <!-- Creamos una lista desordenada, sin numeros -->
+            <ul class="lista-aside">
+
+                <!-- El target te abre otra pagina -->
+                <a href="https://www.instagram.com/" target="_blank" class="li-lista-aside">
+                    <li>Instagram</li>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="30px" height="30px">
+                        <!-- todo lo que pone en el path d= sirve para "dibujar" laslineas del dibujo -->
+                        <path
+                            d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z" />
+                    </svg>
+
+                </a>
+                <li>facebook</li>
+                <li>twitter</li>
+            </ul>
+        </aside>
+
+        <main>
+
+
+           <div class="columnas2">
+                <li>Seguridad</li>
+                <li>Sinceridad</li>
+                <li>Asertividad</li>
+            </div>
+            <div class="caracteristicas">
+                <br>
+                <div class="parrafo1">
+                    <p>Las personas seguras de sí mismas se conocen a sí mismas y saben lo que quieren. Confían en su juicio y se sienten bien consigo mismos y con la situación que sea. Están en contacto con sus emociones sin dejar que las dominen. De esa manera, evitan que se vuelvan impulsivos.</p>
+                </div><br>
+                <div>
+                    <div class="parrafo3">
+                        <p>La sinceridad nos permite expresarnos libres de todo fingimiento con los demas. Es lo que nos permite manifestarnos exteriormente como somos interiormente, en nuestra relación con los demás. Es la claridad y transparencia en lo que se hace, en lo que se piensa y en cómo se vive.</p>
+                    </div>
+                </div><br>
+                <div>
+                    <div class="parrafo2">
+                        <p>Al ser asertivo demuestras que te respetas a ti mismo, ya que estás dispuesto a defender tus intereses y a expresar lo que piensas y sientes. También demuestras que eres consciente de los derechos de los demás y estás dispuesto a resolver los conflictos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cosas">
+                <ul class="test">
+                    <h3 class="titulocosas">Cosas que no dejaria de hacer:<h3>
+                    <li>
+                        Deporte
+                        <img src="imagenes/ufcfeaturepage_feature4_asset1.webp" alt="" class="left">
+                        <p class="quitarnegrita">Para mi hacer deporte, sobre todo de contacto es algo muy importante en la vida ya que me ayuda a estar bien tanto animica como fisicamente.</p>
+                    </li>
+                    <li>
+                        Escuchar musica
+                        <img src="imagenes/Spotify-solo-logo-1024x1024.png" alt="" class="left">
+                        <p class="quitarnegrita">Escuchar musica es algo fundamental en mi vida, tanto como para viajes largos como para mi dia a dia.</p>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </main>
+
+        
+
+        <aside class="aside-derecha">
+         
+        </aside>
+
+    </div>
+
+    <footer>
+        <!-- &copy te pone el logo de copyrigh -->
+        <p>&copy; Proyecto primra evalucin Emilio Abril</p>
+    </footer>
+
+</body>
+
+</html>
