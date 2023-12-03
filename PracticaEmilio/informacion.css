@@ -1,0 +1,42 @@
+main {
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    /* Establece el área de relleno en los cuatro lados de un elemento */
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+aside {
+    /* Como hay 2 aside con la misma clase, cada uno va a ocupar un 15% */
+    background-color: #eee;
+    padding: 10px;
+    width: 15%;
+    height: 1000px;
+}
+
+.lista-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.li-lista-aside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.lista-aside a {
+    text-decoration: none;
+    color: black;
+}
+.aside-derecha{
+    background-image: url(./imagenes/b38d2854f779ea99b2f46777cfb04f29.jpg)
+    
+    
+}
